@@ -106,11 +106,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 424612, guid: 0249bd24cf9912e4993135e1b850f9fc, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .152999997
+      value: .200000003
       objectReference: {fileID: 0}
     - target: {fileID: 424612, guid: 0249bd24cf9912e4993135e1b850f9fc, type: 2}
       propertyPath: m_LocalPosition.z
-      value: .400000006
+      value: 1.38999999
       objectReference: {fileID: 0}
     - target: {fileID: 424612, guid: 0249bd24cf9912e4993135e1b850f9fc, type: 2}
       propertyPath: m_LocalRotation.x
@@ -148,7 +148,8 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11469378, guid: 0249bd24cf9912e4993135e1b850f9fc, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 0249bd24cf9912e4993135e1b850f9fc, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &336611190
@@ -321,6 +322,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spheringWheelTransform: {fileID: 336611193}
   spaceTransform: {fileID: 1863504521}
+  origin: {fileID: 2135999500}
   speed: .100000001
 --- !u!114 &336611199
 MonoBehaviour:
@@ -398,7 +400,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: .100000001
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11418722, guid: 8cc1f03d4fb21db4b809ff8f18fea662, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 8cc1f03d4fb21db4b809ff8f18fea662, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &934046470
@@ -424,6 +427,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 387a757c028a2024c9095c58046d3516, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  climateText: {fileID: 0}
+  terrainText: {fileID: 0}
+  populationText: {fileID: 0}
+  gravityText: {fileID: 0}
 --- !u!114 &1136357034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -514,6 +522,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 387a757c028a2024c9095c58046d3516, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  climateText: {fileID: 0}
+  terrainText: {fileID: 0}
+  populationText: {fileID: 0}
+  gravityText: {fileID: 0}
 --- !u!114 &1497686905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -794,7 +807,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: .100000001
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11495700, guid: 37f13cf84bf151e429c6fd6f54276bff, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 37f13cf84bf151e429c6fd6f54276bff, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1633975439
@@ -816,6 +830,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 387a757c028a2024c9095c58046d3516, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  climateText: {fileID: 0}
+  terrainText: {fileID: 0}
+  populationText: {fileID: 0}
+  gravityText: {fileID: 0}
 --- !u!114 &1767292628
 MonoBehaviour:
   m_ObjectHideFlags: 0

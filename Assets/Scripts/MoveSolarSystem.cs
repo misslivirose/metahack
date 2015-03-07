@@ -5,6 +5,7 @@ public class MoveSolarSystem : MonoBehaviour {
 
     public Transform spheringWheelTransform;
     public Transform spaceTransform;
+	public Transform origin; 
 	public float speed = .1f;
 
     // Use this for initialization
@@ -14,8 +15,14 @@ public class MoveSolarSystem : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
 		if (WorldController.gazing) {
-			spaceTransform.Translate (Vector3.forward * Time.deltaTime * speed); 
+			//if not .4 away; Vector between curpos and origin< .4 
+			if(Vector3.Distance(origin.position, spaceTransform.position) < .4f){
+				spaceTransform.LookAt(WorldController.Target.transform); 
+				spaceTransform.Translate (Vector3.forward * Time.deltaTime * speed); 
+
+			}
 		} else {
 			//Move Home
 		}

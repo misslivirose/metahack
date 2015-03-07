@@ -5,6 +5,7 @@ using System.Collections;
 public class WorldController : MonoBehaviour {
 
 	public static bool gazing = false; 
+	public static GameObject Target; 
 
 	// Use this for initialization
 	void Start () {

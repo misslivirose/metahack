@@ -30,6 +30,7 @@ public class OnPlanetTouch : MonoBehaviour {
 	public void OnGazeDwell(){
 		Debug.Log ("Gazing");
 		WorldController.gazing = true; 
+		WorldController.Target = (GameObject) this.gameObject; 
 	}
 
 	public void OnGazeDwellExit(){
