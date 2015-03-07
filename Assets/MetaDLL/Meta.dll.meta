@@ -3,9 +3,7 @@ guid: c194b141a03c88649a39294c9c55f84c
 PluginImporter:
   serializedVersion: 1
   iconMap: {}
-  executionOrder:
-    Meta.MetaUserSettingsManager: -500
-    Meta.MetaWorld: -1000
+  executionOrder: {}
   isPreloaded: 0
   platformData:
     Any:

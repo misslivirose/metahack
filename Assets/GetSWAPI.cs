@@ -7,12 +7,12 @@ using System.IO;
 
 public class GetSWAPI : MonoBehaviour {
 
-    string baseURL = "http://swapi.co/api/planets/51/";
+    string baseURL = "http://swapi.co/api/planets/1/";
     public Text nameText, climateText, terrainText, populationText, gravityText;
 	IEnumerator DownloadPlanet()
-	{		
+	{
         // Update this to use the proper input method from Meta, i.e. "onClick" equivalent
-        // Grab the tag and append it to the baseURL, i.e. baseURL + "this.Tag" 
+        // Grab the tag and append it to the baseURL, i.e. baseURL + "this.Tag"
 		WWW w = new WWW(baseURL);
 		yield return w;
         yield return new WaitForSeconds(1f);
@@ -34,5 +34,5 @@ public class GetSWAPI : MonoBehaviour {
         gravityText.text = planet.GetField("gravity").ToString().Trim('"');
 	}
 
-    
+
 }
