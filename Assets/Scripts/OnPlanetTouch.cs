@@ -10,10 +10,7 @@ public class OnPlanetTouch : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        print("Started planet import...\n");
-        string s = gameObject.tag;
-        Debug.Log("Getting planet: " + s);
-        StartCoroutine(DownloadPlanet(s));
+
     }
 	
 	// Update is called once per frame
@@ -23,9 +20,10 @@ public class OnPlanetTouch : MonoBehaviour {
 	public void OnTouchDwell()
 	{
         //renderer.material.color = Color.cyan;
-        string toAdd = gameObject.tag;
-
-		Debug.Log ("Was Dwelled" + toAdd);
+        string s = gameObject.tag;
+        Debug.Log("Getting planet: " + s);
+        StartCoroutine(DownloadPlanet(s));
+        Debug.Log ("Was Dwelled" + s);
 	}
 
     IEnumerator DownloadPlanet(string s)
