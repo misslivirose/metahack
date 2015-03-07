@@ -17,7 +17,7 @@ public class MoveSolarSystem : MonoBehaviour {
 
 		if (WorldController.gazing) {
 			//if not .4 away; Vector between curpos and origin< .4 
-			Debug.Log("Target: " + WorldController.Target.tag); 
+			//Debug.Log("Target: " + WorldController.Target.tag); 
 			float x; 
 			if(WorldController.Target != null && (x = Vector3.Distance(WorldController.Target.transform.position, spaceTransform.position)) > .4f){
 				spaceTransform.LookAt(WorldController.Target.transform); 
