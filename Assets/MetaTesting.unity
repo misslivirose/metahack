@@ -106,11 +106,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 424612, guid: 0249bd24cf9912e4993135e1b850f9fc, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: .152999997
       objectReference: {fileID: 0}
     - target: {fileID: 424612, guid: 0249bd24cf9912e4993135e1b850f9fc, type: 2}
       propertyPath: m_LocalPosition.z
-      value: .569000006
+      value: .400000006
       objectReference: {fileID: 0}
     - target: {fileID: 424612, guid: 0249bd24cf9912e4993135e1b850f9fc, type: 2}
       propertyPath: m_LocalRotation.x
@@ -156,19 +156,19 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1863504521}
     m_Modifications:
     - target: {fileID: 400000, guid: 1f9b3fd9f472a8d4690ea1cc8195e40c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -.0649999976
+      value: -.400000006
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1f9b3fd9f472a8d4690ea1cc8195e40c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -.0250000004
+      value: -.100000001
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1f9b3fd9f472a8d4690ea1cc8195e40c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: .400000006
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1f9b3fd9f472a8d4690ea1cc8195e40c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -188,11 +188,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1f9b3fd9f472a8d4690ea1cc8195e40c, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 1f9b3fd9f472a8d4690ea1cc8195e40c, type: 2}
       propertyPath: _hud
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 1f9b3fd9f472a8d4690ea1cc8195e40c, type: 2}
       propertyPath: _useDefaultHUDsettings
@@ -266,6 +266,26 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: .0299999993
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 1f9b3fd9f472a8d4690ea1cc8195e40c, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 1f9b3fd9f472a8d4690ea1cc8195e40c, type: 2}
+      propertyPath: _touchable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 1f9b3fd9f472a8d4690ea1cc8195e40c, type: 2}
+      propertyPath: _useDefaultTouchSettings
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 1f9b3fd9f472a8d4690ea1cc8195e40c, type: 2}
+      propertyPath: _grabbable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 1f9b3fd9f472a8d4690ea1cc8195e40c, type: 2}
+      propertyPath: _gazeable
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1f9b3fd9f472a8d4690ea1cc8195e40c, type: 2}
   m_IsPrefabParent: 0
@@ -279,7 +299,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 336611191}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 916534153, guid: c194b141a03c88649a39294c9c55f84c, type: 3}
   m_Name: 
@@ -300,8 +320,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spheringWheelTransform: {fileID: 336611193}
-  spaceTransform: {fileID: 1972847128}
-  speed: .0250000004
+  spaceTransform: {fileID: 1863504521}
+  speed: .100000001
 --- !u!114 &336611199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,7 +334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spheringWheelTransform: {fileID: 336611193}
-  spaceTransform: {fileID: 2135999500}
+  spaceTransform: {fileID: 1863504521}
 --- !u!114 &726938350
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11400156, guid: ba72f82482f610140acec07dc288ea2b,
@@ -336,7 +356,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 407978, guid: 8cc1f03d4fb21db4b809ff8f18fea662, type: 2}
       propertyPath: m_LocalPosition.x
-      value: .218999997
+      value: .551999986
       objectReference: {fileID: 0}
     - target: {fileID: 407978, guid: 8cc1f03d4fb21db4b809ff8f18fea662, type: 2}
       propertyPath: m_LocalPosition.y
@@ -344,7 +364,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 407978, guid: 8cc1f03d4fb21db4b809ff8f18fea662, type: 2}
       propertyPath: m_LocalPosition.z
-      value: .266000003
+      value: .0810000002
       objectReference: {fileID: 0}
     - target: {fileID: 407978, guid: 8cc1f03d4fb21db4b809ff8f18fea662, type: 2}
       propertyPath: m_LocalRotation.x
@@ -410,7 +430,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1136357031}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -1545604054, guid: c194b141a03c88649a39294c9c55f84c, type: 3}
   m_Name: 
@@ -447,7 +467,7 @@ MonoBehaviour:
   _pointDwellMustBeStable: 1
   _pointingHandType: 2
   _pointDwellTime: 1
-  _gazeable: 0
+  _gazeable: 1
   _gazeableDwellable: 1
   _orbital: 0
   _useDefaultOrbitalSettings: 1
@@ -494,24 +514,99 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 387a757c028a2024c9095c58046d3516, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1497686905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1497686900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1545604054, guid: c194b141a03c88649a39294c9c55f84c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _grabbable: 0
+  _moveObjectOnGrab: 1
+  _rotateObjectOnGrab: 0
+  _scaleObjectOnGrab: 0
+  _moveObjectOnTwoHandedGrab: 0
+  _scaleObjectOnTwoHandedGrab: 0
+  _rotateObjectOnTwoHandedGrab: 0
+  _useDefaultGrabSettings: 1
+  _grabbableDistance: .100000001
+  _grabbingHandType: 2
+  _pinchable: 0
+  _moveObjectOnPinch: 0
+  _scaleObjectOnPinch: 1
+  _useDefaultPinchSettings: 1
+  _pinchableDistance: .100000001
+  _pinchingHandType: 2
+  _useMinScale: 1
+  _useMaxScale: 1
+  _minScaleRatio: .5
+  _maxScaleRatio: 2
+  _touchable: 1
+  _useDefaultTouchSettings: 1
+  _touchableDwellable: 1
+  _touchDwellMustBeStable: 1
+  _touchingHandType: 2
+  _touchDwellTime: 1
+  _pointable: 0
+  _pointableDwellable: 1
+  _useDefaultPointSettings: 1
+  _pointDwellMustBeStable: 1
+  _pointingHandType: 2
+  _pointDwellTime: 1
+  _gazeable: 1
+  _gazeableDwellable: 1
+  _orbital: 0
+  _useDefaultOrbitalSettings: 1
+  _orbitalLockDistance: 1
+  _userReachDistance: 1
+  _lockDistance: .400000006
+  _orbitalLookAtCamera: 1
+  _orbitalLookAtCameraFlipY: 1
+  _hud: 0
+  _useDefaultHUDsettings: 1
+  _hudLockPosition: 1
+  _hudLockPositionX: 1
+  _hudLockPositionY: 1
+  _hudLockPositionZ: 1
+  _hudLockRotation: 1
+  _hudLockRotationX: 1
+  _hudLockRotationY: 1
+  _hudLockRotationZ: 1
+  _hudLayer: 1
+  _palmLock: 0
+  _lockHandType: 2
+  _fingerLock: 0
+  _jaysify: 0
+  _arrow: 0
+  _canvasTarget: 0
+  _canvasTargetID: 1
+  _markerTarget: 0
+  _markerTargetID: -1
+  _markerTargetPlaceable: 1
+  _markerTargetPlaceableHighlight: 1
+  _markerTargetPersistent: 0
 --- !u!1001 &1614494966
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1863504521}
     m_Modifications:
     - target: {fileID: 400000, guid: 1f9b3fd9f472a8d4690ea1cc8195e40c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: .0710000023
+      value: .400000006
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1f9b3fd9f472a8d4690ea1cc8195e40c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -.0250000004
+      value: -.100000001
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1f9b3fd9f472a8d4690ea1cc8195e40c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: .400000006
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1f9b3fd9f472a8d4690ea1cc8195e40c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -531,11 +626,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1f9b3fd9f472a8d4690ea1cc8195e40c, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 1f9b3fd9f472a8d4690ea1cc8195e40c, type: 2}
       propertyPath: _hud
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 1f9b3fd9f472a8d4690ea1cc8195e40c, type: 2}
       propertyPath: _useDefaultHUDsettings
@@ -555,7 +650,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 1f9b3fd9f472a8d4690ea1cc8195e40c, type: 2}
       propertyPath: m_Name
-      value: Backward
+      value: Forward
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 1f9b3fd9f472a8d4690ea1cc8195e40c, type: 2}
       propertyPath: _moveObjectOnGrab
@@ -605,6 +700,18 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: .0299999993
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 1f9b3fd9f472a8d4690ea1cc8195e40c, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 1f9b3fd9f472a8d4690ea1cc8195e40c, type: 2}
+      propertyPath: _useDefaultTouchSettings
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 1f9b3fd9f472a8d4690ea1cc8195e40c, type: 2}
+      propertyPath: _grabbable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1f9b3fd9f472a8d4690ea1cc8195e40c, type: 2}
   m_IsPrefabParent: 0
@@ -623,7 +730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de181f613c6fb1847880f6e3e71ce608, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spaceTransform: {fileID: 1972847128}
+  spaceTransform: {fileID: 1863504521}
   speed: .100000001
 --- !u!114 &1614494971
 MonoBehaviour:
@@ -631,7 +738,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1614494967}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 916534153, guid: c194b141a03c88649a39294c9c55f84c, type: 3}
   m_Name: 
@@ -645,7 +752,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 404942, guid: 37f13cf84bf151e429c6fd6f54276bff, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -.27700001
+      value: -.572000027
       objectReference: {fileID: 0}
     - target: {fileID: 404942, guid: 37f13cf84bf151e429c6fd6f54276bff, type: 2}
       propertyPath: m_LocalPosition.y
@@ -653,7 +760,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 404942, guid: 37f13cf84bf151e429c6fd6f54276bff, type: 2}
       propertyPath: m_LocalPosition.z
-      value: .301999986
+      value: .172999993
       objectReference: {fileID: 0}
     - target: {fileID: 404942, guid: 37f13cf84bf151e429c6fd6f54276bff, type: 2}
       propertyPath: m_LocalRotation.x
@@ -709,6 +816,85 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 387a757c028a2024c9095c58046d3516, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1767292628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1767292623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1545604054, guid: c194b141a03c88649a39294c9c55f84c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _grabbable: 0
+  _moveObjectOnGrab: 1
+  _rotateObjectOnGrab: 0
+  _scaleObjectOnGrab: 0
+  _moveObjectOnTwoHandedGrab: 0
+  _scaleObjectOnTwoHandedGrab: 0
+  _rotateObjectOnTwoHandedGrab: 0
+  _useDefaultGrabSettings: 1
+  _grabbableDistance: .100000001
+  _grabbingHandType: 2
+  _pinchable: 0
+  _moveObjectOnPinch: 0
+  _scaleObjectOnPinch: 1
+  _useDefaultPinchSettings: 1
+  _pinchableDistance: .100000001
+  _pinchingHandType: 2
+  _useMinScale: 1
+  _useMaxScale: 1
+  _minScaleRatio: .5
+  _maxScaleRatio: 2
+  _touchable: 1
+  _useDefaultTouchSettings: 1
+  _touchableDwellable: 1
+  _touchDwellMustBeStable: 1
+  _touchingHandType: 2
+  _touchDwellTime: 1
+  _pointable: 0
+  _pointableDwellable: 1
+  _useDefaultPointSettings: 1
+  _pointDwellMustBeStable: 1
+  _pointingHandType: 2
+  _pointDwellTime: 1
+  _gazeable: 1
+  _gazeableDwellable: 1
+  _orbital: 0
+  _useDefaultOrbitalSettings: 1
+  _orbitalLockDistance: 1
+  _userReachDistance: 1
+  _lockDistance: .400000006
+  _orbitalLookAtCamera: 1
+  _orbitalLookAtCameraFlipY: 1
+  _hud: 0
+  _useDefaultHUDsettings: 1
+  _hudLockPosition: 1
+  _hudLockPositionX: 1
+  _hudLockPositionY: 1
+  _hudLockPositionZ: 1
+  _hudLockRotation: 1
+  _hudLockRotationX: 1
+  _hudLockRotationY: 1
+  _hudLockRotationZ: 1
+  _hudLayer: 1
+  _palmLock: 0
+  _lockHandType: 2
+  _fingerLock: 0
+  _jaysify: 0
+  _arrow: 0
+  _canvasTarget: 0
+  _canvasTargetID: 1
+  _markerTarget: 0
+  _markerTargetID: -1
+  _markerTargetPlaceable: 1
+  _markerTargetPlaceableHighlight: 1
+  _markerTargetPersistent: 0
+--- !u!4 &1863504521
+Transform:
+  m_PrefabParentObject: {fileID: 400090, guid: ba72f82482f610140acec07dc288ea2b, type: 2}
+  m_PrefabInternal: {fileID: 1935030830}
 --- !u!1001 &1935030830
 Prefab:
   m_ObjectHideFlags: 0
@@ -750,7 +936,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400090, guid: ba72f82482f610140acec07dc288ea2b, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400440, guid: ba72f82482f610140acec07dc288ea2b, type: 2}
       propertyPath: _localizers.Array.data[0]
@@ -800,7 +986,7 @@ Transform:
   - {fileID: 934046470}
   - {fileID: 1136357032}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
 --- !u!1 &2135999499
 GameObject:
   m_ObjectHideFlags: 0
@@ -810,6 +996,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2135999500}
   - 114: {fileID: 2135999501}
+  - 114: {fileID: 2135999502}
   m_Layer: 0
   m_Name: Space
   m_TagString: Untagged
@@ -828,7 +1015,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
 --- !u!114 &2135999501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -904,3 +1091,14 @@ MonoBehaviour:
   _markerTargetPlaceable: 1
   _markerTargetPlaceableHighlight: 1
   _markerTargetPersistent: 0
+--- !u!114 &2135999502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2135999499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34676565fbd66d3488d4ea63bf5e9201, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

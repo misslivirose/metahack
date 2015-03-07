@@ -14,9 +14,13 @@ public class MoveSolarSystem : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	    
+		if (WorldController.gazing) {
+			spaceTransform.Translate (Vector3.forward * Time.deltaTime * speed); 
+		} else {
+			//Move Home
+		}
 	}
-
+	
     public void OnHold()
     {
         //GetComponent<MetaBody>().hudLockRotation = true;

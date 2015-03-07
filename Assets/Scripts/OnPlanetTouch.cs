@@ -19,10 +19,19 @@ public class OnPlanetTouch : MonoBehaviour {
 		Debug.Log ("Was Dwelled");
 	}
 
-	//public void OnGazeHold(){
-	//	Debug.Log ("Gazing");
-	//}
+	public void OnGazeDwell(){
+		Debug.Log ("Gazing");
+		WorldController.gazing = true; 
+	}
 
+	public void OnGazeDwellExit(){
+		Debug.Log ("Stopped Gazing");
+	}
+
+//	public void OnGazeExit(){
+//	
+//		Debug.Log ("Stopped Gazing");
+//	}
 
 //    public void OnHold()
 //    {

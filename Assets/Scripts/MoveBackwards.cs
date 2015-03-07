@@ -12,12 +12,18 @@ public class MoveBackwards : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//Gazing
+		if (WorldController.gazing) {
+			//spaceTransform.Translate (Vector3.back * Time.deltaTime * speed); 
+		} else {
+			//Move Home
+		}
 		
 	}
 
-	void OnHold(){
-		spaceTransform.Translate (Vector3.back * Time.deltaTime * speed); 
-	}
+//	void OnHold(){
+//		spaceTransform.Translate (Vector3.back * Time.deltaTime * speed); 
+//	}
 //
 //    public void OnTouchDwell()
 //    {
