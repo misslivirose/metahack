@@ -31,10 +31,13 @@ public class OnPlanetTouch : MonoBehaviour {
 		Debug.Log ("Gazing");
 		WorldController.gazing = true; 
 		WorldController.Target = (GameObject) this.gameObject; 
+
 	}
 
 	public void OnGazeDwellExit(){
 		Debug.Log ("Stopped Gazing");
+		WorldController.gazing = false; 
+		WorldController.Target = null; 
 	}
 
     IEnumerator DownloadPlanet(string s)

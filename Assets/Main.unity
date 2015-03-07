@@ -261,7 +261,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22300000, guid: a32fc4e15e9dd7249a7fbcb68701184d, type: 2}
       propertyPath: m_RenderMode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22400000, guid: a32fc4e15e9dd7249a7fbcb68701184d, type: 2}
       propertyPath: m_LocalScale.x
@@ -277,7 +277,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22300000, guid: a32fc4e15e9dd7249a7fbcb68701184d, type: 2}
       propertyPath: m_PlaneDistance
-      value: 50
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a32fc4e15e9dd7249a7fbcb68701184d, type: 2}
@@ -4598,7 +4598,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spaceTransform: {fileID: 1833525027}
   origin: {fileID: 544414652}
-  speed: .100000001
+  speed: .0500000007
 --- !u!1001 &1836784935
 Prefab:
   m_ObjectHideFlags: 0
