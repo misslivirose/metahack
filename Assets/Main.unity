@@ -197,7 +197,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22400000, guid: a32fc4e15e9dd7249a7fbcb68701184d, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: .950399995
       objectReference: {fileID: 0}
     - target: {fileID: 22400000, guid: a32fc4e15e9dd7249a7fbcb68701184d, type: 2}
       propertyPath: m_LocalRotation.x
@@ -217,7 +217,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22400000, guid: a32fc4e15e9dd7249a7fbcb68701184d, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 22400000, guid: a32fc4e15e9dd7249a7fbcb68701184d, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -229,11 +229,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22400000, guid: a32fc4e15e9dd7249a7fbcb68701184d, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 617
       objectReference: {fileID: 0}
     - target: {fileID: 22400000, guid: a32fc4e15e9dd7249a7fbcb68701184d, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 347
       objectReference: {fileID: 0}
     - target: {fileID: 22400000, guid: a32fc4e15e9dd7249a7fbcb68701184d, type: 2}
       propertyPath: m_AnchorMin.x
@@ -253,32 +253,36 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22400000, guid: a32fc4e15e9dd7249a7fbcb68701184d, type: 2}
       propertyPath: m_Pivot.x
-      value: 0
+      value: .5
       objectReference: {fileID: 0}
     - target: {fileID: 22400000, guid: a32fc4e15e9dd7249a7fbcb68701184d, type: 2}
       propertyPath: m_Pivot.y
-      value: 0
+      value: .5
       objectReference: {fileID: 0}
     - target: {fileID: 22300000, guid: a32fc4e15e9dd7249a7fbcb68701184d, type: 2}
       propertyPath: m_RenderMode
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 22400000, guid: a32fc4e15e9dd7249a7fbcb68701184d, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0
+      value: .00186717696
       objectReference: {fileID: 0}
     - target: {fileID: 22400000, guid: a32fc4e15e9dd7249a7fbcb68701184d, type: 2}
       propertyPath: m_LocalScale.y
-      value: 0
+      value: .00186717696
       objectReference: {fileID: 0}
     - target: {fileID: 22400000, guid: a32fc4e15e9dd7249a7fbcb68701184d, type: 2}
       propertyPath: m_LocalScale.z
-      value: 0
+      value: .00186717696
       objectReference: {fileID: 0}
     - target: {fileID: 22300000, guid: a32fc4e15e9dd7249a7fbcb68701184d, type: 2}
       propertyPath: m_PlaneDistance
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 22300000, guid: a32fc4e15e9dd7249a7fbcb68701184d, type: 2}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 905570165}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a32fc4e15e9dd7249a7fbcb68701184d, type: 2}
   m_IsPrefabParent: 0
@@ -2355,6 +2359,8 @@ GameObject:
   - 222: {fileID: 865588197}
   - 114: {fileID: 865588196}
   - 114: {fileID: 865588195}
+  - 114: {fileID: 865588200}
+  - 114: {fileID: 865588199}
   m_Layer: 5
   m_Name: MGUI.Panel
   m_TagString: Untagged
@@ -2429,9 +2435,95 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -178, y: -101.879997}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 368, y: 203.75}
-  m_Pivot: {x: .5, y: .5}
+  m_Pivot: {x: 1, y: 1}
+--- !u!114 &865588199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 865588194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 916534153, guid: c194b141a03c88649a39294c9c55f84c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &865588200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 865588194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1545604054, guid: c194b141a03c88649a39294c9c55f84c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _grabbable: 0
+  _moveObjectOnGrab: 1
+  _rotateObjectOnGrab: 0
+  _scaleObjectOnGrab: 0
+  _moveObjectOnTwoHandedGrab: 0
+  _scaleObjectOnTwoHandedGrab: 0
+  _rotateObjectOnTwoHandedGrab: 0
+  _useDefaultGrabSettings: 1
+  _grabbableDistance: .100000001
+  _grabbingHandType: 2
+  _pinchable: 0
+  _moveObjectOnPinch: 0
+  _scaleObjectOnPinch: 1
+  _useDefaultPinchSettings: 1
+  _pinchableDistance: .100000001
+  _pinchingHandType: 2
+  _useMinScale: 1
+  _useMaxScale: 1
+  _minScaleRatio: .5
+  _maxScaleRatio: 2
+  _touchable: 0
+  _useDefaultTouchSettings: 1
+  _touchableDwellable: 1
+  _touchDwellMustBeStable: 1
+  _touchingHandType: 2
+  _touchDwellTime: 1
+  _pointable: 0
+  _pointableDwellable: 1
+  _useDefaultPointSettings: 1
+  _pointDwellMustBeStable: 1
+  _pointingHandType: 2
+  _pointDwellTime: 1
+  _gazeable: 0
+  _gazeableDwellable: 1
+  _orbital: 1
+  _useDefaultOrbitalSettings: 1
+  _orbitalLockDistance: 1
+  _userReachDistance: 1
+  _lockDistance: .400000006
+  _orbitalLookAtCamera: 1
+  _orbitalLookAtCameraFlipY: 1
+  _hud: 0
+  _useDefaultHUDsettings: 1
+  _hudLockPosition: 1
+  _hudLockPositionX: 1
+  _hudLockPositionY: 1
+  _hudLockPositionZ: 1
+  _hudLockRotation: 1
+  _hudLockRotationX: 1
+  _hudLockRotationY: 1
+  _hudLockRotationZ: 1
+  _hudLayer: 1
+  _palmLock: 0
+  _lockHandType: 2
+  _fingerLock: 0
+  _jaysify: 0
+  _arrow: 0
+  _canvasTarget: 0
+  _canvasTargetID: 1
+  _markerTarget: 0
+  _markerTargetID: -1
+  _markerTargetPlaceable: 1
+  _markerTargetPlaceableHighlight: 1
+  _markerTargetPersistent: 0
 --- !u!1001 &886851500
 Prefab:
   m_ObjectHideFlags: 0
@@ -2494,6 +2586,11 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 454396, guid: 78e06406fd830db4bbd9d77e9c8fed8c, type: 2}
   m_PrefabInternal: {fileID: 886851500}
+--- !u!20 &905570165
+Camera:
+  m_PrefabParentObject: {fileID: 2000004, guid: ba72f82482f610140acec07dc288ea2b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1833525026}
 --- !u!1 &909362090
 GameObject:
   m_PrefabParentObject: {fileID: 158726, guid: 37f13cf84bf151e429c6fd6f54276bff, type: 2}
@@ -4195,6 +4292,96 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ddc2886f8433c8240b711f157afd49a3, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1401109433
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: a32fc4e15e9dd7249a7fbcb68701184d, type: 2}
+  m_PrefabInternal: {fileID: 179402706}
+--- !u!114 &1401109437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1401109433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 916534153, guid: c194b141a03c88649a39294c9c55f84c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1401109438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1401109433}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1545604054, guid: c194b141a03c88649a39294c9c55f84c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _grabbable: 0
+  _moveObjectOnGrab: 1
+  _rotateObjectOnGrab: 0
+  _scaleObjectOnGrab: 0
+  _moveObjectOnTwoHandedGrab: 0
+  _scaleObjectOnTwoHandedGrab: 0
+  _rotateObjectOnTwoHandedGrab: 0
+  _useDefaultGrabSettings: 1
+  _grabbableDistance: .100000001
+  _grabbingHandType: 2
+  _pinchable: 0
+  _moveObjectOnPinch: 0
+  _scaleObjectOnPinch: 1
+  _useDefaultPinchSettings: 1
+  _pinchableDistance: .100000001
+  _pinchingHandType: 2
+  _useMinScale: 1
+  _useMaxScale: 1
+  _minScaleRatio: .5
+  _maxScaleRatio: 2
+  _touchable: 0
+  _useDefaultTouchSettings: 1
+  _touchableDwellable: 1
+  _touchDwellMustBeStable: 1
+  _touchingHandType: 2
+  _touchDwellTime: 1
+  _pointable: 0
+  _pointableDwellable: 1
+  _useDefaultPointSettings: 1
+  _pointDwellMustBeStable: 1
+  _pointingHandType: 2
+  _pointDwellTime: 1
+  _gazeable: 0
+  _gazeableDwellable: 1
+  _orbital: 1
+  _useDefaultOrbitalSettings: 1
+  _orbitalLockDistance: 1
+  _userReachDistance: 1
+  _lockDistance: .400000006
+  _orbitalLookAtCamera: 1
+  _orbitalLookAtCameraFlipY: 1
+  _hud: 0
+  _useDefaultHUDsettings: 1
+  _hudLockPosition: 1
+  _hudLockPositionX: 1
+  _hudLockPositionY: 1
+  _hudLockPositionZ: 1
+  _hudLockRotation: 1
+  _hudLockRotationX: 1
+  _hudLockRotationY: 1
+  _hudLockRotationZ: 1
+  _hudLayer: 1
+  _palmLock: 0
+  _lockHandType: 2
+  _fingerLock: 0
+  _jaysify: 0
+  _arrow: 0
+  _canvasTarget: 0
+  _canvasTargetID: 1
+  _markerTarget: 0
+  _markerTargetID: -1
+  _markerTargetPlaceable: 1
+  _markerTargetPlaceableHighlight: 1
+  _markerTargetPersistent: 0
 --- !u!1001 &1405198607
 Prefab:
   m_ObjectHideFlags: 0
@@ -4782,7 +4969,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 407978, guid: 8cc1f03d4fb21db4b809ff8f18fea662, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: .483999997
       objectReference: {fileID: 0}
     - target: {fileID: 407978, guid: 8cc1f03d4fb21db4b809ff8f18fea662, type: 2}
       propertyPath: m_LocalPosition.z
