@@ -61,6 +61,7 @@ ExportedObj/
 *.pidb
 *.suo
 *.sln
+*.sln.ide
 *.user
 *.unityproj
 *.booproj
