@@ -3,7 +3,6 @@ using System.Collections;
 
 public class MoveSolarSystem : MonoBehaviour {
 
-    public Transform spheringWheelTransform;
     public Transform spaceTransform;
 	public Transform origin; 
 	public float speed = .1f;
