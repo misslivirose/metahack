@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Meta;
 
 public class OnPlanetTouch : MonoBehaviour {
 
@@ -11,5 +12,10 @@ public class OnPlanetTouch : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
+	}
+	public void OnTouchDwell()
+	{
+		//renderer.material.color = Color.cyan;
+		Debug.Log ("Was Dwelled");
 	}
 }
