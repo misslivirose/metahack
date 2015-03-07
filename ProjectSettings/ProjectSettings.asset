@@ -116,7 +116,7 @@ PlayerSettings:
   iOSLaunchScreenLandscape: {fileID: 0}
   iOSLaunchScreenBackgroundColor:
     serializedVersion: 2
-    rgba: 554983942
+    rgba: 0
   iOSLaunchScreenFillPct: 1
   iOSLaunchScreenCustomXibPath: 
   AndroidTargetDevice: 0
@@ -202,7 +202,7 @@ PlayerSettings:
   ps4ApplicationParam2: 0
   ps4ApplicationParam3: 0
   ps4ApplicationParam4: 0
-  ps4Passcode: 1O8YFOGKjxRrJBdT3hVOfoaMeAjSWfch
+  ps4Passcode: frAQBc8Wsa1xVPfvJcrgRYwTiizs2trQ
   ps4pnSessions: 1
   ps4pnPresence: 1
   ps4pnFriends: 1
