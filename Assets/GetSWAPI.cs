@@ -1,33 +1,38 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
 using System.Net;
 using System.IO;
 
 public class GetSWAPI : MonoBehaviour {
 
+    string baseURL = "http://swapi.co/api/planets/1/";
+    public Text textbox;
 	IEnumerator DownloadPlanet()
 	{
 		// Pull down the JSON from our web-service
 		
-		WWW w = new WWW("http://swapi.co/api/planets/1/");
+        // Update this to use the proper input method from Meta, i.e. "onClick" equivalent
+        // Grab the tag and append it to the baseURL, i.e. baseURL + "this.Tag" 
+		WWW w = new WWW(baseURL);
 		yield return w;
         yield return new WaitForSeconds(1f);
-        Debug.Log("Received planets");
-		// Extract the spheres from our JSON results
-		
+        Debug.Log("Received planet");
 		ExtractPlanetData(w.text);
 	}
 	void Start ()
 	{
-		print("Started planet import...\n");
+        print("Started planet import...\n");
 		StartCoroutine(DownloadPlanet());
 	}
 	void ExtractPlanetData(string json_planet)
 	{
 		JSONObject planet = new JSONObject (json_planet);
-		foreach (JSONObject item in planet.list)
-        {
-            Debug.Log("Testing");
-        }
+
+        JSONObject planetName = planet.GetField("name");
+        textbox.text = planetName.ToString();
+
+        Debug.Log("Name of planet: " + planetName.ToString());
 	}
 }
