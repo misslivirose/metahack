@@ -8,7 +8,7 @@ using System.IO;
 public class GetSWAPI : MonoBehaviour {
 
     string baseURL = "http://swapi.co/api/planets/1/";
-    public Text textbox;
+    public Text nameText, climateText, terrainText, populationText, gravityText;
 	IEnumerator DownloadPlanet()
 	{
 		// Pull down the JSON from our web-service
@@ -30,9 +30,15 @@ public class GetSWAPI : MonoBehaviour {
 	{
 		JSONObject planet = new JSONObject (json_planet);
 
-        JSONObject planetName = planet.GetField("name");
-        textbox.text = planetName.ToString();
+        nameText.text = planet.GetField("name").ToString();
 
-        Debug.Log("Name of planet: " + planetName.ToString());
+        climateText.text = planet.GetField("climate").ToString();
+
+        terrainText.text = planet.GetField("terrain").ToString();
+
+        populationText.text = planet.GetField("population").ToString();
+
+        gravityText.text = planet.GetField("gravity").ToString();
+
 	}
 }
