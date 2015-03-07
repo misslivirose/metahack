@@ -29,16 +29,12 @@ public class GetSWAPI : MonoBehaviour {
 	void ExtractPlanetData(string json_planet)
 	{
 		JSONObject planet = new JSONObject (json_planet);
-
-        nameText.text = planet.GetField("name").ToString();
-
-        climateText.text = planet.GetField("climate").ToString();
-
-        terrainText.text = planet.GetField("terrain").ToString();
-
-        populationText.text = planet.GetField("population").ToString();
-
-        gravityText.text = planet.GetField("gravity").ToString();
-
+        nameText.text = planet.GetField("name").ToString().Trim('"');
+        climateText.text = planet.GetField("climate").ToString().Trim('"');
+        terrainText.text = planet.GetField("terrain").ToString().Trim('"');
+        populationText.text = planet.GetField("population").ToString().Trim('"');
+        gravityText.text = planet.GetField("gravity").ToString().Trim('"');
 	}
+
+    
 }
