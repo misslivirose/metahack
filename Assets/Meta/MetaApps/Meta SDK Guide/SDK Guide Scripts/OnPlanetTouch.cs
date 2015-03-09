@@ -6,9 +6,12 @@ public class OnPlanetTouch : MonoBehaviour
 {
     string baseURL = "http://swapi.co/api/planets/";
     public Text nameText, climateText, terrainText, populationText, gravityText;
+	//public MoveSolarSystem movement; 
     // Use this for initialization
+	private MoveSolarSystem movement;
     void Start()
     {
+		 movement = GetComponent <MoveSolarSystem> ();
     }
 
     // Update is called once per frame
@@ -23,6 +26,9 @@ public class OnPlanetTouch : MonoBehaviour
         Debug.Log("Getting planet: " + s);
         StartCoroutine(DownloadPlanet(s));
         Debug.Log("Was Dwelled" + s);
+		movement.PlaySound ();
+
+
     }
     public void OnGazeDwell()
     {
